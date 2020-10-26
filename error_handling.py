@@ -13,6 +13,11 @@ def handle_error_by_returning_none(input_data):
 
 
 def handle_error_by_returning_tuple(input_data):
+    try:
+        a = int(input_data)
+        return True, a
+    except:
+        return False, None
     pass
 
 
